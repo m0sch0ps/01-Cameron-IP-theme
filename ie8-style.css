@@ -1,0 +1,731 @@
+/*   
+Theme Name: Cameron-IP
+Theme URI: http://andydbancroft.com
+Description: A search engine optimized website framework for WordPress.
+Template: parent-theme
+Author: Andy Bancroft
+Author URI: http://andydbancroft.com
+Version: 1.0
+Tags: Patents
+Your theme can be your copyrighted work.
+Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
+*/
+
+/* Reset default browser styles */
+@import url('../from-scratch - Copy/styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('../from-scratch - Copy/styles/rebuild.css');
+
+/* Import a basic layout */
+@import url('../from-scratch - Copy/styles/2c-r.css');
+
+/* Basic WordPress Styles */
+@import url('../from-scratch - Copy/styles/wp.css');
+
+
+
+
+
+/*////////////////// Global //////////////////*/
+
+
+html {
+	font-size: 100%;
+	background-color: #f1f1f1;
+	
+	overflow-y: scroll;
+	background-attachment: fixed;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6, ul, ol, blockquote, li, p, a, span, form {
+	margin: 0px;
+	padding: 0px;
+}
+hr {
+	display: none;
+}
+
+h1, h1 a {
+	font-family:FunctionProBook;
+	font-size: 1.5em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color:#333;
+	font-weight:lighter;	
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+	color:#6A4A9A;	
+}
+h2, h2 a {
+	font-family:FunctionProBook;
+	font-size: 1.2em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color:#333;
+	font-weight:lighter;	
+}
+h3, h3 a {
+	font-family:FunctionProBook;
+	font-size: 1em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color:#333;
+	font-weight:lighter;	
+}
+h4, h4 a {
+	font-family:FunctionProBook;
+	font-size: .85em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color:#333;
+	font-weight:lighter;	
+}
+h5, h5 a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.85em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	color:#6A4A9A;	
+}
+
+ul {
+	list-style: none;
+}
+.type-page ul, .type-post ul {
+	list-style: inside disc ;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.8em;
+	color:#666;
+	text-indent:20px;
+	
+}
+ol {
+	list-style: inside decimal ;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	line-height: 1.8em;
+	color:#666;
+	text-indent:20px;
+	
+}
+p {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 0.85em;
+	line-height: 1.8em;
+	color:#666;
+}
+blockquote p {
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color:inherit;
+}
+a:hover {
+	text-decoration: underline;
+	
+}
+.page p a {
+	text-decoration: underline;
+	color:#666;
+}
+.page p a:hover {
+	text-decoration: none;
+	color:#6A4A9A;
+}
+
+a:link img, a:visited img, a:active img {
+	border: none;
+}
+#space {
+	clear: both;
+}
+.skip-link {
+	display: none;
+}
+
+#wrapper {
+	width:100%;
+}
+
+
+
+/*////////////////// Header //////////////////*/
+
+
+
+
+#logo {
+	float:left;
+	width:173px;
+	height:69px;
+	background-image: url(images/logo.png);
+}
+#header-container {
+	width:100%;
+	background-color:#FFF;
+}
+#header {
+	margin:0 auto;
+	width:940px;
+	padding:30px 10px;
+	background-color:#FFF;
+}
+#image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/index-header1.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;	 
+}
+#news-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-news.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#about-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-about.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#designs-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-designs.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#patents-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-patents.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#trademarks-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-trademarks.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#copyright-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-copyright.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#costs-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-costs.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#contact-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-contact.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#foreign-agents-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-foreign-agents.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#small-business-image-banner {
+	height:200px;
+	width:1500px;
+	margin:0 auto;
+	background-image:url(images/banner-small-business.jpg);
+     -moz-background-size: cover;
+     -webkit-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+	 background-position:center;
+}
+#access {
+	width:78%;
+	float:right;
+	margin:17px 0 0 0;
+	}
+#menu-main a {
+	font-family:FunctionProMedium;
+	font-size:0.9em;
+	float:left;
+	display:block;
+	height: 100%;
+	text-align: center;
+	padding:15px 12px;
+	clear:none;	
+	color:#777;
+}
+#menu-main a:hover {
+	color: #111;
+	background:#F2EFF5;
+	text-decoration:none;
+	border-bottom:medium solid #6A4A9A;
+}
+#mobile-search {
+	display:none;
+}
+
+
+/*////////////////// index //////////////////*/
+
+#sequence {
+	max-width:1000px;
+	margin:0 auto;
+	 position: relative; /* required */
+	 overflow:hidden;
+}
+#sequence > .sequence-canvas li > * {  /* required */
+    position: absolute;
+}
+#sequence > .sequence-canvas { /* required */
+    height: 100%; 
+    width: 100%;
+	
+}
+#sequence > .sequence-canvas > li { /* required */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.info1 h1, .info2 h1, .info3 h1 {
+	color:#FFF;
+}
+#index-logo {
+	background-image:url(images/index-logo.png);
+	width:170px;
+	height:56px;
+	float:right;
+	margin:35px 0 0 0;
+}
+#info1-title {
+	margin:35px 20px 0 0;
+	float:left;
+}
+#info1-button a {
+	font-family:FunctionProMedium;
+	font-size:1.2em;
+	display:block;
+	text-align: center;
+	padding:15px 12px;
+	clear:none;	
+	color:#FFF;
+	width:30%;
+	margin:35px 5px 0 0;
+	float:left;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:thin solid #FFF;
+}
+#info1-button a:hover {
+	color: #6A4A9A;
+	background:#f1f1f1;
+	text-decoration:none;
+}
+.info2 h1 {
+	display:block;
+	text-align: center;
+	padding:13px 20px;
+	width:50%;	
+	background-color: rgba(0, 0, 0, 0.3);
+	margin:20px auto 15px auto;
+}
+#info2-button a {
+	font-family:FunctionProMedium;
+	font-size:1.2em;
+	display:block;
+	height: 100%;
+	text-align: center;
+	padding:15px 12px;
+	clear:none;	
+	color:#FFF;
+	width:30%;
+	margin:20px auto 0 auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:thin solid #FFF;
+}
+#info2-button a:hover {
+	color: #6A4A9A;
+	background:#f1f1f1;
+	text-decoration:none;
+}
+.info2-para {
+	color: #000;
+	width:80%;
+	margin:0 auto;
+
+}
+.info1,
+.info2,
+.info3 {
+    height: 200px;
+}
+#sequence {
+	height:200px;
+}
+.info1,
+.info2,
+.info3 {
+    height: 200px;
+}
+.info1,
+.info2,
+.info3 {
+    left: -800px;
+    top: 0px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.animate-in .info1,
+.animate-in .info2,
+.animate-in .info3 {
+    left: 0px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.animate-out .info1,
+.animate-out .info2,
+.animate-out .info3 {
+    left: 800px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    transition-duration: 1s;
+}   
+#third-box {
+	width:27.33%;
+	float:left;
+	text-align:center;
+	padding:15px 3%;
+}
+
+/*////////////////// pages //////////////////*/
+
+#container {
+	max-width:940px;
+	padding:30px 10px;
+	margin:0 auto;
+	text-align:left;
+}
+.entry-meta {
+	margin:0 0 15px 0;
+}
+.entry-meta span {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:.7em;
+}
+#sidebar {
+	float:right;
+	clear:none;
+	width:21%;
+	padding:20px 2%;
+}
+#page-title-container {
+	width:100%;
+	background-color:#FFF;
+}
+#page-title {
+	margin:0 auto;
+	max-width:940px;
+	padding:20px;
+	text-align:left;
+}
+#content {
+	float:left;
+	width:69%;
+	padding:30px 3%;
+	background-color:#FFF;
+	margin:0 0 20px 0;
+}
+.widget-container {
+	margin:0 0 20px 0;
+}
+.widget-container ul li a {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#6A4A9A;
+	font-size:.8em;
+	}
+.widget-container ul li {
+	padding:5px 0;
+	border-bottom:thin solid #CCC;
+}
+.screen-reader-text {
+	display:none;
+}
+#searchsubmit {
+	background: #6A4A9A!important;
+	color: #FFF!important;
+	font-size: .7em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 7px 8px 7px 8px!important;
+	margin: 0px!important;
+	border: none!important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	cursor: hand!important;
+}
+#searchsubmit:hover {
+	color: #fff!important;
+	background: #F90!important;
+}
+input[type="text"] {
+	font-size: .7em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 6px 8px 6px 8px!important;
+	margin: 0px!important;
+	border: #CCC solid thin;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	color:#666;
+}
+input[type="submit"], {
+	background: #6A4A9A!important;
+	color: #FFF!important;
+	font-size: .9em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 7px 8px 7px 8px!important;
+	margin: 0 0 5px 0!important;
+	border: none!important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	cursor: hand!important;
+}
+input[type="submit"]:hover, {
+	color: #fff!important;
+	background-image:url(images/denim.png)!important;
+}
+.wpcf7-submit {
+	margin:20px 0 0 0;
+}
+#disclosure-content {
+	margin:0 auto;
+	width:100%;
+	
+}
+input[name="Name"], input[name="Email"], input[name="Postcode"], input[name="Telephone"], input[name="How"] {
+	color: #6A4A9A!important;
+	font-size: .9em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 7px 8px 7px 8px!important;
+	margin: 0 0 5px 0!important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width:60%;
+	background-color:#E4E3E5;
+	border:none!important;
+}	
+textarea[name="Enquiry"] {
+	color: #6A4A9A;
+	font-size: .9em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 7px 8px 7px 8px!important;
+	margin: 0 0 5px 0!important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width:60%;
+	background-color:#E4E3E5;
+	border:none!important;
+}	
+input[name="completed-by-402"],input[name="date-295"] {
+	color: #6A4A9A!important;
+	font-size: .9em!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	padding: 7px 8px 7px 8px!important;
+	margin: 0 0 5px 0!important;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width:35%;
+	background-color:#E4E3E5;
+	border:none!important;
+}
+	
+/*////////////////// Footer //////////////////*/
+
+#footer {
+	width:100%;
+	padding:30px 0;
+	border-top:medium solid #6A4A9A;
+	background-image:url(images/denim.png);
+}
+#footer-content {
+	margin:0 auto;
+	max-width:940px;
+	padding:30px 10px;	
+}
+.widget-container-footer {
+	float:left;
+	width:21%;
+	text-align:left;
+	margin:0 20px 0 0;
+}
+.widget-container-footer ul li a {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#888;
+	font-size:.8em;
+}
+.widget-container-footer ul li {
+	padding:5px 0;
+	
+}
+.widget-container-footer h3 {
+	padding:5px 0;
+	color:#888;
+	border-bottom:thin solid #6A4A9A;
+}
+#footer-content-2 {
+	width:100%;
+	padding:30px 0 0 0;
+	border-top:#6A4A9A solid thin;
+}	
+#footer-content-1 {
+	width:100%;
+	padding: 0 0 30px 0;
+	
+}	
+#footer-logo {
+	float:left;
+	width:173px;
+	height:69px;
+	background-image:url(images/footer-logo.png);
+	
+}
+#footer-notes {
+	text-align:left;
+	width:34%;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#888;
+	font-size:.75em;
+	clear:none;
+	float:left;
+	margin:5px 0 0 60px;
+}
+#member-logos {
+	float:right;
+	background-image:url(images/member-logos.png);
+	width:200px;
+	height:70px;
+	background-position:bottom;
+}
+/*////////////////// Fonts //////////////////*/
+@font-face {
+    font-family: 'FunctionProBold';
+    src: url('fonts/FunctionPro-Bold-webfont.eot');
+    src: url('fonts/FunctionPro-Bold-webfont.eot?iefix') format('eot'),
+         url('fonts/FunctionPro-Bold-webfont.woff') format('woff'),
+         url('fonts/FunctionPro-Bold-webfont.ttf') format('truetype'),
+         url('fonts/FunctionPro-Bold-webfont.svg#webfontfJXKJAfV') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FunctionProDemi';
+    src: url('fonts/FunctionPro-Demi-webfont.eot');
+    src: url('fonts/FunctionPro-Demi-webfont.eot?iefix') format('eot'),
+         url('fonts/FunctionPro-Demi-webfont.woff') format('woff'),
+         url('fonts/FunctionPro-Demi-webfont.ttf') format('truetype'),
+         url('fonts/FunctionPro-Demi-webfont.svg#webfontalFyZ4NE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FunctionProMedium';
+    src: url('fonts/FunctionPro-Medium-webfont.eot');
+    src: url('fonts/FunctionPro-Medium-webfont.eot?iefix') format('eot'),
+         url('fonts/FunctionPro-Medium-webfont.woff') format('woff'),
+         url('fonts/FunctionPro-Medium-webfont.ttf') format('truetype'),
+         url('fonts/FunctionPro-Medium-webfont.svg#webfontrF77UyWk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FunctionProBook';
+    src: url('fonts/FunctionPro-Book-webfont.eot');
+    src: url('fonts/FunctionPro-Book-webfont.eot?iefix') format('eot'),
+         url('fonts/FunctionPro-Book-webfont.woff') format('woff'),
+         url('fonts/FunctionPro-Book-webfont.ttf') format('truetype'),
+         url('fonts/FunctionPro-Book-webfont.svg#webfontJO3pCHUe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
